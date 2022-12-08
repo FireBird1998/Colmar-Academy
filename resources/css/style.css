@@ -1,0 +1,53 @@
+/*universal tags*/
+html {
+    font-size: 16px;
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*nav bar*/
+
+.navbar{
+    display: flex;
+    height: 64px;
+    align-items: center;
+    width: 100%;
+}
+
+.logosection {
+    display: flex;
+    flex: 1;
+    padding-left: 1.5rem;
+    
+}
+
+.logotext {
+    display: flex;
+    align-items: center;
+}
+
+.logotext h3 {
+    font-weight: 700;
+}
+
+.logotext p{
+    font-weight: 100;
+}
+
+.menu{
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li {
+    padding-left: 1rem;
+}
+
+
