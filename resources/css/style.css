@@ -83,12 +83,9 @@ body {
     }
 }
 
-/*Main banner section*/
-
-.cointainer {
-    width: 100%;
-
-}
+/*Main banner section
+    Part 1
+*/
 
 .banner1 {
     display: flex;
@@ -154,5 +151,132 @@ body {
     }
     #banner1Button {
         width: auto; 
+    }
+}
+
+/*Main banner section
+    Part 2
+*/
+
+.banner2 {
+    display: flex;
+    margin: 2rem 0;
+    color: rgb(62, 62, 62);
+}
+
+.image2 {
+    flex: 3;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.image2 img {
+    width: 100%;
+    padding: 0 0 2rem 0;
+}
+
+.image2 h2{
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
+
+.image2 p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.image2 h4 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/*cards*/
+
+.cards {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card1,
+.card2,
+.card3 {
+    display: flex;
+    border: 1px solid rgba(215, 215, 215, 0.874);
+}
+
+.card3 {
+    background-color: rgba(215, 215, 215, 0.874);
+}
+
+.mobileImg{
+    display: none;
+}
+
+.desktopImg {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.card1Text,
+.card2Text,
+.card3Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards h2{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.cards p,
+.cards a {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.cards p {
+    padding-bottom: 0.5rem;
+}
+
+.cards a{
+    text-decoration: none;
+    color: rgb(17, 172, 243);
+}
+
+@media only screen and (max-width: 611px){
+    .banner2{
+        margin: 1rem 1rem 0 1rem;
+    }
+    .image2{
+        display: none;
+    }
+    .desktopImg {
+        display: none;
+    }
+    .mobileImg{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;        
+    }
+    .card3 {
+        background-color: rgba(215, 215, 215, 0);
+    }
+    .card1,
+    .card2,
+    .card3 {
+        flex-direction: column;
+        border: none;
+    }
+    .card1Text,
+    .card2Text,
+    .card3Text{
+        padding: 1rem;
     }
 }
