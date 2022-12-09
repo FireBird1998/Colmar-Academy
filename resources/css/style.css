@@ -2,6 +2,7 @@
 html {
     font-size: 16px;
   }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -82,3 +83,76 @@ body {
     }
 }
 
+/*Main banner section*/
+
+.cointainer {
+    width: 100%;
+
+}
+
+.banner1 {
+    display: flex;
+    background-color: rgba(215, 215, 215, 0.874);
+}
+
+.image1{
+    flex: 3;
+}
+.banner1 img {
+    width: 90%;
+    padding: 2rem 1.5rem;
+}
+
+.bannerText1 {
+    flex: 2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    color: rgb(62, 62, 62);
+    
+}
+
+.bannerText1 h1 {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    width: 80%;
+}
+
+.bannerText1 p {
+    padding-bottom: 1.5rem;
+    width: 80%;
+}
+
+#banner1Button {
+   width: 80%;
+   text-align: center;
+   text-decoration: none;
+   background-color: rgb(62, 62, 62);
+   color: white;
+   padding: .5rem;
+}
+
+@media only screen and (max-width: 611px) {
+    .banner1{
+        flex-direction: column;
+    }
+    .banner1 img {
+        padding: 0;
+        width: 100%;
+        
+    }
+    .bannerText1 {
+        padding: 2rem 1rem ;
+        
+    }
+    .bannerText1 h1 {
+        width: 100%;
+    }
+    .bannerText1 p {
+        width: 100%;
+    }
+    #banner1Button {
+        width: auto; 
+    }
+}
