@@ -340,3 +340,41 @@ body {
 .box p{
     padding-bottom: 1.5rem;
 }
+
+/*Mobile responsive for mobile and tablets */
+
+@media only screen and (max-width: 868px) {
+    .learning{
+        padding: 2rem 1rem;
+    }
+    .boxes{
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        gap: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 614px) {
+    .learning{
+        background-color: rgba(255, 255, 255, 0.137);
+    }
+    .learning h3 {
+        padding-bottom: 1rem;
+    }
+    .boxes{
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+        row-gap: .5rem;
+    }
+    .box{
+        background-color: rgba(215, 215, 215, 0.729);
+    }
+    .box h2,
+    .box p,
+    .box img {
+        display: none;
+    } 
+    .box h1 {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem 0 1rem 1rem;
+    }
+}
