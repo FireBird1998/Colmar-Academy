@@ -378,3 +378,98 @@ body {
         padding: 1rem 0 1rem 1rem;
     }
 }
+
+/*EXHIBIT PART*/
+
+.exhibit {
+    display: flex;
+}
+.exhibitContainer{
+    color: rgb(62, 62, 62);
+    border-bottom: 1px solid rgb(149, 149, 149);
+}
+
+.exhibitContainer h2 {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: 800; 
+}
+
+.exhibitvideo {
+    flex: 3;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+.exhibitvideo h1{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+.exhibitvideo p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.exhibitvideo video{
+    padding-bottom: 1.5rem;
+}
+.exhibitCards {
+    flex: 2;
+}
+.exhibitcard{
+    display: flex;
+    align-items: center;
+}
+.exhibitcard img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+#exhibitCardFirst {
+    background-color: rgba(215, 215, 215, 0.729);
+}
+.exhibitcard h1{
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.exhibitcard p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 614px) {
+    .exhibitCards{
+        display: none;
+    }
+    .exhibitContainer h2 {
+        padding-bottom: 1rem;
+    }
+    .exhibitvideo h1,
+    .exhibitvideo p {
+        display: none;
+    }
+    .exhibitvideo{
+        padding: 0;
+    }
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    font-size: .6rem;
+    font-weight: 400;
+}
+.footer2 {
+    display: flex;   
+}
+#privacy {
+    padding: 0 0.5rem;
+}
+@media only screen and (max-width: 454px) {
+    .footer2{
+        display: none;
+    }
+}
